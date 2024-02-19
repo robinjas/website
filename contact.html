@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="./js/script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <h1>Contact Us</h1>
+    <img src="images/contact.png" alt="Image showing various ways to contact us">
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="./cities/springfield.html">Springfield</a></li>
+            <li><a href="./cities/chicago.html">Chicago</a></li>
+            <li><a href="./cities/galena.html">Galena</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section aria-labelledby="contact-form-title">
+        <h2 id="contact-form-title">Get in Touch</h2>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Your first name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Your last name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Your email address" required>
+            </div>
+
+            <div class="form-group">
+                <label for="confirmEmail">Confirm Email:</label>
+                <input type="email" id="confirmEmail" name="confirmEmail" placeholder="Confirm email address" required>
+            </div>
+
+            <div class="form-group">
+                <label for="question">Ask a Question:</label>
+                <textarea id="question" name="question" placeholder="Type your question here"></textarea>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <aside>
+        <h2>Follow Us on Social Media!</h2>
+        <ul>
+            <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+            <li><a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+        </ul>
+    </aside>
+</main>
+
+<footer>
+    <p>&copy; 2024 Discover Illinois. All rights reserved.</p>
+    <nav aria-label="Footer navigation">
+        <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="https://www.enjoyillinois.com/" target="_blank">Enjoy Illinois - Official Tourism Site</a></li>
+        </ul>
+    </nav>
+</footer>
+
+</body>
+</html>

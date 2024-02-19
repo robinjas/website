@@ -1,0 +1,221 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    line-height: 1.6;
+    color: #333;
+}
+
+div, div:before, div:after {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#header-title {
+    font-size: 32px;
+    color: snow;
+}
+
+header h1 {
+    margin: 10px 0;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+header img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin-top: 10px;
+    object-fit: cover;
+    max-height: 50vh;
+}
+
+nav {
+    background: #333;
+}
+
+nav > ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav > ul > li {
+    margin: 0 15px;
+}
+
+nav > ul > li > a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav > ul > li > a:hover, .active {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px 20px;
+}
+
+.container {
+    padding: 20px;
+    background-color: #ffffff;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.container img {
+    max-width: 100%;
+    height: auto;
+}
+
+section, aside {
+    padding: 20px;
+    background-color: #ffffff;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+section {
+    position: relative;
+}
+
+.absolute-note {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #fff;
+    padding: 5px;
+    border: 1px solid #ddd;
+    animation: fadeIn 2s ease-out;
+    z-index: 10;
+    max-width: calc(100% - 40px);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group textarea {
+    height: 100px;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer nav {
+    margin-top: 10px;
+}
+
+footer nav > ul {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer nav > ul > li {
+    margin: 0 15px;
+}
+
+footer nav > ul > li > a {
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    nav > ul {
+        flex-direction: column;
+    }
+
+    nav > ul > li > a {
+        padding: 15px 0;
+    }
+
+    .container, section, aside {
+        margin: 10px;
+        max-width: 100%;
+    }
+
+    header img {
+        max-width: 100%;
+    }
+
+    .absolute-note {
+        position: static;
+        margin-top: 20px;
+        width: auto;
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
