@@ -177,8 +177,15 @@ footer nav ul li a {
     padding: 5px;
     border: 1px solid black;
     border-radius: 10px;
-
+    opacity: 0;   /* Initially hidden */
+    animation: appearAndBounce 1.5s ease-in-out forwards;
 }
+
+@keyframes appearAndBounce {
+    0%   { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(5px); } /* Bounce at the end */
+}
+
 
 @media screen and (max-width: 768px) {
     section, aside {
