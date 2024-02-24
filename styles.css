@@ -178,7 +178,7 @@ footer nav ul li a {
     border: 1px solid black;
     border-radius: 10px;
     opacity: 0;   /* Initially hidden */
-    animation: appearAndBounce 1.5s ease-in-out forwards;
+    animation: appearAndBounce 1.6s ease-in-out forwards;
 }
 
 @keyframes appearAndBounce {
