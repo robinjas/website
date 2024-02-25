@@ -59,6 +59,9 @@ async def submit_form(request: Request):
     query = contacts.insert().values(
         first_name=first_name, last_name=last_name, email=email, question=question
     )
-    last_record_id = await database.execute(query)
+    try:
+        last_record_id = await database.execute(query)
+    except asyncpg.exceptions.UniqueViolationError:
+        raise HTTPException(status_code=400, detail="This email is already used.")
 
     return JSONResponse(content={"message": "Contact information successfully saved", "id": last_record_id})
